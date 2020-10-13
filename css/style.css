@@ -1,0 +1,113 @@
+body {
+    /* background: url(../pics/fond2.jpeg) no-repeat fixed left bottom, url(../pics/fond3.png) no-repeat fixed top right; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    margin: auto;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Indie Flower', cursive;
+    text-transform: capitalize;
+    font-variant: small-caps;
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+}
+
+h2 {
+    text-shadow: 2px 5px 15px rgba(0, 102, 255, 0.945), -2px -5px 15px aqua;
+}
+p {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+blockquote {
+    text-align: center;
+}
+
+figure {
+    text-align: center;
+} 
+
+pre {
+    border: black 15px solid;
+    width: 50%;
+    margin: auto;
+    background-image: url(../pics/fond1.jpg);
+    color: #0f31ee;
+}
+
+#top {
+    text-shadow: 2px 3px 5px rgb(122, 116, 116);
+}
+
+blockquote > span::before {
+    content: '\201C';
+}
+
+blockquote > span::after {
+    content: '\201D';
+}
+
+h1 + p::first-line, h2 + p::first-line, h1 + main > p:first-child::first-line {
+    font-style: italic;
+}
+
+h1 + p::first-letter, h2 + p::first-letter, h1+main > p:first-child::first-letter {
+    font-weight: bold;
+    font-style: 1.5em;
+    
+}
+
+figure:hover{
+    position: absolute;
+    top: -999px;
+    left: -999px;
+    z-index: 123;
+}
+
+ul  li {
+    list-style-image: url(../pics/check_circle-24px.svg);
+}
+
+table {
+    width: 75%;
+    margin: auto;
+    border-collapse: separate;
+}
+
+th {
+    background-color: #cf550ec4;
+    color: #eee;
+    border: .1em ridge #1d1915d3;
+}
+
+tr:nth-child(2n+1) {
+    background-color: rgb(141, 131, 131);
+}
+
+tfoot td {
+    background-color: rgb(83, 79, 79);
+    color: #eee;
+}
+
+caption {
+    font-weight: bold;
+    color: red;
+    margin-bottom: .5em;
+}
+
+td:last-of-type {
+    text-align: right;
+}
+tbody tr {
+    transition: background-color .4s ease-in;
+}
+
+tbody tr:hover {
+    background-color: rgb(30, 255, 0);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    /* transition: background-color .4s ease-in; */
+}

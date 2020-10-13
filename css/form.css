@@ -1,0 +1,59 @@
+@import url(index.css);
+
+main {
+  background-color: rgba(58, 52, 52, 0.726);
+}
+
+
+form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+form div {
+  margin: .5em;
+}
+
+legend, label {
+  color: #eee;
+  font-size: 1.1em;
+  text-transform: capitalize;
+}
+
+label {
+  display: inline-block;
+  min-width: 35%;
+  font-weight: bold;
+  text-align: right;
+}
+
+form div>input+label {
+  text-align: left;
+}
+
+input, select, textarea{
+  border: none;
+  display: inline-block;
+  width: 64%;
+  background-color: rgb(158, 142, 142);
+}
+
+input:focus, select:focus, textarea:focus {
+  background-color: rgb(92, 74, 74);
+  border: none;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  width: 5%;
+}
+#salary {
+  width: 40%;
+}
+
+#sal_val {
+  margin-left: 2em ;
+}
+fieldset > fieldset {
+  margin: .5em;
+  padding: .5em;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/form.css">
+  <title>formulaire</title>
+</head>
+<body>
+  <main>
+    <h1 class="heading">Formulaire de candidature</h1>
+    <form action="#" method="POST" enctype="multipart/form-data">
+      <fieldset id="form_contact">
+        <legend>identité:</legend>
+
+        <div>
+          <label for="fname">name :</label>
+          <input type="text" name="fname" id="fname" placeholder="Prénom usuel" pattern="[a-zA-Zêèéë\- ]{2,30}">
+        </div>
+
+        <div>
+          <label for="date-of-birth">date de naissance :</label>
+          <input type="date" name="date-of-birth" id="date-of-birth">
+          <span id="age"></span>
+          <!-- afficher l'age -->
+        </div>
+
+        <div>
+          <label for="mail">e-mail :</label>
+          <input type="email" name="mail" id="mail">
+        </div>
+
+        <div>
+          <label for="site">site web perso :</label>
+          <input type="url" name="site" id="site">
+        </div>
+
+        <div>
+          <!-- Utiliser un webservice -->
+          <label for="phone">téléphone :</label>
+          <input type="url" name="phone" id="phone">
+        </div>
+
+        <div>
+          <label for="region"> région :</label>
+          <select name="region" id="region">
+            <optgroup label="Ouest">
+              <option value="BZ">bretagne</option>
+              <option value="NM">normandie</option>
+            <optgroup label="Nord">
+              <option value="PC">pas-de-calais</option>
+              <option value="PI">picardi</option>
+            </optgroup>
+            <optgroup label="Est">
+              <option value="AL">alsace</option>
+              <option value="LO">Lorraine</option>
+            </optgroup>
+            <optgroup label="Sud">
+              <option value="OC">occitanie</option>
+              <option value="CA">paca</option>
+            </optgroup>
+            <optgroup label="Centre">
+              <option value="IF">ile-de-france</option>
+            </optgroup>
+          </select>
+        </div>
+        <fieldset>
+          <legend>Genre</legend>
+          <div>
+            <label for="gen_fem">Féminin :</label>
+            <input type="radio" name="gender" id="gen_fem" value="Féminin" checked>
+          </div>
+          <div>
+            <label for="gen_mas">Msculin :</label>
+            <input type="radio" name="gender" id="gen_mas" value="Msculin">
+          </div>
+          <div>
+            <label for="gen_neu">Neutre :</label>
+            <input type="radio" name="gender" id="gen_neu" value="Neutre">
+          </div>
+        </fieldset>
+      </fieldset>
+
+      <fieldset id="competences">
+        <legend>Compétences:</legend>
+
+        <div>
+          <label for="exp">Expérience :</label>
+          <input type="number" name="exp" id="exp" min="1" max="35" step="1">
+        </div>
+
+        <div>
+          <!-- Utiliser un webservice -->
+          <label for="lang">Language principal:</label>
+          <input type="text" id="lang" name="lang" list="lang_list">
+
+          <datalist id="lang_list">
+            <option value="Python">
+            <option value="Java">
+            <option value="Perl">
+            <option value="Basic">
+            <option value="Cobol">
+            <option value="C">
+            <option value="C++">
+            <option value="PhP">
+            <option value="Turbo Pascal">
+          </datalist>
+        </div>
+
+        <div>
+          <label>Mobilité :</label>
+          <select name="area" id="area[]" size="4" multiple>
+            <option value="EU">Europe</option>
+            <option value="AS">Asie</option>
+            <option value="AM">Amerique</option>
+            <option value="AF">Afrique</option>
+            <option value="OC">Océanie</option>
+            <option value="MC">Mon canapé</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="cv">Curriculum Vitae :</label>
+          <input type="file" name="cv" id="cv" accept=".pdf, .doc, .docx, .odr, .txt">
+          <input type="hidden" name="MAX_FILE_SIZE" value="5242880">
+        </div>
+
+        <div>
+          <label for="test">Test Couleur</label>
+          <input type="color" name="test" id="test" title="Ceci est un test de personnalité au travers du choix d'une couleur">
+        </div>
+      </fieldset>
+
+      <fieldset >
+        <legend>Prétentions salariales :</legend>
+        
+        <!-- afficher la valeur du salaire en Euro -->
+        <div>
+          <label for="salary"></label>
+          <input type="range" name="salary" id="salary" min="2500" max="8000" step="100" value="3200" onchange="document.getElementById('sal_val').textContent=this.value + '€';">
+          <output id="sal_val"></output>
+        </div>
+
+        <fieldset>
+          <legend>Statut souhaité :</legend>
+          <div>
+            <label for="stat_jr">Developpeur Junior :</label>
+            <input type="checkbox" name="status[]" id="stat_jr" value="Dev Junior">
+          </div>
+
+          <div>
+            <label for="stat_sr">Developpeur Senior :</label>
+            <input type="checkbox" name="status[]" id="stat_sr" value="Dev Senior">
+          </div>
+
+          <div>
+            <label for="stat_cp">Chef de Projets :</label>
+            <input type="checkbox" name="status[]" id="stat_cp" value="Chef_project">
+          </div>
+
+          <div>
+            <label for="stat_dr">Directeur Si :</label>
+            <input type="checkbox" name="status[]" id="stat_dr" value="Dir-si">
+          </div>
+
+        </fieldset>
+      </fieldset>
+
+      <fieldset>
+        <div>
+          <label for="rem">Remarque :</label>
+          <textarea name="rem" id="rem" cols="30" rows="10"></textarea>
+        </div>
+      </fieldset>
+    </form>
+
+    <input type="submit" value="Sauvegarder">
+    <input type="reset" value="Effacer">
+    <!-- <input type="image" src="/pics/check_circle-24px.svg" alt="button"> -->
+  </main>
+  <script src="/js/script.js"></script>
+</body>
+</html>
