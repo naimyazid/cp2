@@ -1,0 +1,189 @@
+@import "../css/index.css";
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+}
+
+h2 {
+  font-family: 'roboto';
+  font-weight: light;
+  color: rgb(59, 49, 49);
+  padding: .5em 0;
+  text-transform: uppercase;
+}
+
+.heading {
+  width: 80%;
+  margin: auto;
+  padding: 1em 0;
+  font-family: 'Gugi', cursive;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* header */
+.header {
+  background-image: url(/pics/anfal-shamsudeen-Sf8g7a3duRY-unsplash.jpg);
+  padding: 2em 1em;
+}
+
+.header_heading {
+  font-size: 4em;
+  color: #eee;
+}
+
+.card {
+  padding: 2em;
+}
+
+.card--img {
+  width: 90%;
+  height: 80%;
+  padding-bottom: 2em;
+  margin: 0 auto;
+}
+
+.card--img > img{
+  max-width: 100%;
+  /* box-shadow: .3em .4em .5em rgba(0, 0, 0, 0.472); */
+}
+
+.card--presentation {
+  width: 80%;
+  margin: auto;
+  color: #eee;
+}
+.card--Presentation {
+  width: 80%;
+  margin: auto;
+  color: #eee;
+}
+
+.card--presentation  p {
+  text-align: center;
+}
+.card--Presentation  p {
+  text-align: center;
+}
+/* end of header */
+
+/* end of Presentation */
+.pre {
+  color: #595238;
+}
+
+.presentation {
+  background-color: #2BB2BB;
+}
+
+.card__presentation {
+  width: 80%;
+  margin: auto;
+}
+
+.card__presentation p {
+  color: rgb(59, 49, 49);
+  text-align: justify;
+  padding-bottom: 1em ;
+}
+
+/* Presentation */
+
+/* experience */
+.experience {
+  background-color: #1DD3BD;
+  padding: 1em 0;
+}
+
+.exper {
+  width: 80%;
+  margin: auto;
+}
+
+.exper__item {
+  background-color:  #15978880;
+  margin-bottom: 1em;
+}
+.exper__item p{
+  color: rgb(59, 49, 49);
+}
+/* end of experience */
+
+/* competences */
+.competence{
+  background-color: #2BB2BB;
+}
+
+.lang {
+  width: 80%;
+  margin: auto;
+}
+
+.icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5em .5em;
+  color: #eee;
+}
+
+.icon i {
+  font-size: 2em;
+  margin-right: .2em;
+}
+
+.icon p {
+  font-weight: bold;
+  vertical-align: midd;
+}
+
+.barre1{
+  width: 70%;
+  height: 1em;
+  background-color: #87D4C5;
+}
+
+.barre2 {
+  width: 90%;
+  height: 1em;
+  background-color: #1220e2;
+}
+.barre3 {
+  width: 80%;
+ height: 1em;
+ background-color: #1220e2;
+}
+.barre4 {
+  width: 70%;
+ height: 1em;
+ background-color: #1220e2;
+}
+.barre5 {
+  width: 69%;
+ height: 1em;
+ background-color: #1220e2;
+}
+.barre6 {
+  width: 85%;
+ height: 1em;
+ background-color: #1220e2;
+}
+/* end of competences */
+
+/* media queries */
+@media screen and (min-width:768px) {
+  .card {
+    background-color: #081b29;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+  }
+
+}
+/* end of media queries */
