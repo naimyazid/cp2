@@ -26,7 +26,7 @@ section {
  .button {
    border-width: .1em;
    border-style: solid;
-   border-color: rgba rgb(255, 102, 0);
+   border-color: rgba(255, 102, 0);
    background-color: rgb(255, 102, 0);
    border-radius: .2em;
    padding: .5em 2em;
@@ -521,10 +521,6 @@ footer {
 .footer p {
   font-weight: bold;
   font-size: 1.5em;
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
 }
 
 .separate {
