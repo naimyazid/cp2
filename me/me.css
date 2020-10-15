@@ -191,6 +191,27 @@ h1 {
 }
 /* end of competences */
 
+/* footer */
+ footer {
+   background-color: rgb(31, 25, 25);
+   color: #eee;
+ }
+
+ .media {
+   display: flex;
+   justify-content: center;
+   padding-bottom: 1em;
+ }
+
+ .fa {
+   margin-right: 1em;
+ }
+
+ footer p {
+   text-align: center;
+ }
+/* end of footer */
+
 /* media queries */
 @media screen and (min-width:780px) {
   .heading {
